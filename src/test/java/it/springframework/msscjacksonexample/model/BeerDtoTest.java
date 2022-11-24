@@ -16,7 +16,7 @@ class BeerDtoTest extends BaseTest{
 
     /**
      * serializing json
-    * */
+     */
     @Test
     void testSerializeDto() throws JsonProcessingException {
         BeerDto beerDto = getDto();
@@ -28,7 +28,7 @@ class BeerDtoTest extends BaseTest{
 
     /**
      * deserializing json
-    **/
+    */
     @Test
     void deserializeBeerDto() throws JsonProcessingException {
         String json = "{\"beerId\":\"d1a22f1c-3b02-4dde-8ea2-daccc85675aa\",\"beerName\":\"BeerName\",\"beerStyle\":\"Ale\",\"upc\":12313213123,\"price\":12.00,\"createdDate\":\"2022-11-24T16:55:27.0365084+01:00\",\"lastUpdatedDate\":\"2022-11-24T16:55:27.0385088+01:00\"}\n";
